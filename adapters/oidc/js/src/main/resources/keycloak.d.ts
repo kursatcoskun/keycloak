@@ -237,6 +237,12 @@ declare namespace Keycloak {
 		 * Example of use: { zoom: "no", hardwareback: "yes" }
 		 */
 		cordovaOptions?: { [optionName: string]: string };
+
+		/**
+		 * The custom parameter list is added to the login url as query param.
+		 * Example of use: { customParameter: "custom" }
+		 */
+		customOptions?: { [optionName: string]: string };
 	}
 
 	interface KeycloakLogoutOptions {
